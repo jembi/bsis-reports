@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-18T21:13:20 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bsisTemplate" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8531bd75-d4a6-400e-985c-2ca1cb3d518e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="bsis"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CG" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CT" mode="Opaque" backcolor="#005FB3">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 1_CH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 1_CG" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 1_CT" mode="Opaque" backcolor="#005FB3">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 1_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 2_CH" mode="Opaque" backcolor="#8FAFCC">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 2_CG" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 2_CT" mode="Opaque" backcolor="#596E80">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 2_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 3_CH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 3_CG" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 3_CT" mode="Opaque" backcolor="#005FB3">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 3_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 4_CH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 4_CG" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 4_CT" mode="Opaque" backcolor="#005FB3">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 4_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 7_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 7_CG" mode="Opaque" backcolor="#E6F3FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 7_CT" mode="Opaque" backcolor="#6093BF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 7_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 5_CG" mode="Opaque" backcolor="#E6F3FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 5_CT" mode="Opaque" backcolor="#6093BF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 5_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 6_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 6_CG" mode="Opaque" backcolor="#E6F3FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 6_CT" mode="Opaque" backcolor="#6093BF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 6_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="DonationDataSet" uuid="f263ef7c-8ab8-4f89-a051-118c7a555258">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="bsis"/>
+		<parameter name="Start_Date" class="java.sql.Date">
+			<parameterDescription><![CDATA[]]></parameterDescription>
+		</parameter>
+		<parameter name="End_Date" class="java.sql.Date">
+			<parameterDescription><![CDATA[]]></parameterDescription>
+		</parameter>
+		<queryString language="SQL">
+			<![CDATA[SELECT 
+*
+FROM `donationSummaryView`
+WHERE donationDate BETWEEN $P{Start_Date} AND DATE_ADD($P{End_Date}, INTERVAL 1 DAY)]]>
+		</queryString>
+		<field name="donationIdentificationNumber" class="java.lang.String"/>
+		<field name="donorNumber" class="java.lang.String"/>
+		<field name="gender" class="java.lang.String"/>
+		<field name="age" class="java.lang.Long"/>
+		<field name="ageGroup" class="java.lang.String"/>
+		<field name="donationDate" class="java.sql.Date"/>
+		<field name="venue" class="java.lang.String"/>
+		<field name="donationType" class="java.lang.String"/>
+		<field name="packType" class="java.lang.String"/>
+		<field name="bloodType" class="java.lang.String"/>
+		<field name="bleedStartTime" class="java.sql.Timestamp"/>
+		<field name="bleedEndTime" class="java.sql.Timestamp"/>
+		<field name="bloodTypingStatus" class="java.lang.String"/>
+		<field name="bloodTypingMatchStatus" class="java.lang.String"/>
+		<field name="ttiStatus" class="java.lang.String"/>
+		<field name="donorWeight" class="java.math.BigDecimal"/>
+		<field name="haemoglobinCount" class="java.math.BigDecimal"/>
+		<field name="haemoglobinLevel" class="java.lang.String"/>
+		<field name="donorPulse" class="java.lang.Integer"/>
+		<field name="bloodPressureSystolic" class="java.lang.Integer"/>
+		<field name="bloodPressureDiastolic" class="java.lang.Integer"/>
+		<field name="adverseEvent_id" class="java.lang.Long"/>
+		<field name="ineligibleDonor" class="java.lang.Boolean"/>
+		<field name="released" class="java.lang.Boolean"/>
+		<field name="flaggedForCounselling" class="java.lang.Boolean"/>
+		<field name="counsellingStatus" class="java.lang.String"/>
+		<field name="counsellingDate" class="java.sql.Date"/>
+		<field name="donorCounsellingStatus" class="java.lang.String"/>
+		<field name="ttiReactiveStatus" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="Start_Date" class="java.sql.Date">
+		<parameterDescription><![CDATA[Start Date]]></parameterDescription>
+	</parameter>
+	<parameter name="End_Date" class="java.sql.Date">
+		<parameterDescription><![CDATA[End Date]]></parameterDescription>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT 1;]]>
+	</queryString>
+	<field name="1" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="67" splitType="Stretch">
+			<image>
+				<reportElement x="104" y="1" width="110" height="56" uuid="b8f5d8af-3e06-4291-a55b-2b5ecf4206eb"/>
+				<imageExpression><![CDATA["header_logo_left.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="547" y="1" width="110" height="56" uuid="4f328ce4-cfaf-4424-8c64-23bbf13c00a1"/>
+				<imageExpression><![CDATA["header_logo_right.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="214" y="37" width="333" height="30" uuid="764ac738-733f-4385-b71b-64c37bad85b1"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA["Date Period:  " + $P{Start_Date} + "  to  " + $P{End_Date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="0" width="342" height="30" uuid="9fa9dbcd-6716-4408-92c2-2be2c14647f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Donor Counselling Summary Report]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="284" splitType="Stretch">
+			<crosstab>
+				<reportElement x="0" y="0" width="802" height="284" uuid="420ac469-6968-4988-9242-c5770df4c949">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.crosstab.style.header" value="Crosstab 5_CH"/>
+					<property name="com.jaspersoft.studio.crosstab.style.group" value="Crosstab 5_CG"/>
+					<property name="com.jaspersoft.studio.crosstab.style.total" value="Crosstab 5_CT"/>
+					<property name="com.jaspersoft.studio.crosstab.style.detail" value="Crosstab 5_CD"/>
+				</reportElement>
+				<crosstabDataset>
+					<dataset>
+						<datasetRun subDataset="DonationDataSet" uuid="8db81bd9-227a-4cb4-88a5-6f23d2552b6b">
+							<datasetParameter name="Start_Date">
+								<datasetParameterExpression><![CDATA[$P{Start_Date}]]></datasetParameterExpression>
+							</datasetParameter>
+							<datasetParameter name="End_Date">
+								<datasetParameterExpression><![CDATA[$P{End_Date}]]></datasetParameterExpression>
+							</datasetParameter>
+							<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+						</datasetRun>
+					</dataset>
+				</crosstabDataset>
+				<rowGroup name="ttiReactiveStatus" width="120" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{ttiReactiveStatus}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 5_CH">
+							<textField>
+								<reportElement x="0" y="0" width="120" height="40" uuid="af0df635-5481-4baa-b058-5d791b923034"/>
+								<box padding="3"/>
+								<textFieldExpression><![CDATA[$V{ttiReactiveStatus}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 5_CT">
+							<staticText>
+								<reportElement x="0" y="0" width="250" height="20" uuid="112f747d-b45b-4744-b63f-69907246eb52"/>
+								<box padding="3"/>
+								<text><![CDATA[Total (All Venues)]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<rowGroup name="donorCounsellingStatus" width="130" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{donorCounsellingStatus}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 5_CH">
+							<textField>
+								<reportElement x="0" y="0" width="130" height="20" uuid="bba47daa-1f81-4ad6-8423-2b741c0efd9a"/>
+								<box padding="3"/>
+								<textFieldExpression><![CDATA[$V{donorCounsellingStatus}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 5_CG">
+							<staticText>
+								<reportElement x="0" y="0" width="130" height="20" uuid="07e6a82d-320c-4420-a506-e3595ed22441"/>
+								<box padding="3"/>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<columnGroup name="gender" height="20" totalPosition="End">
+					<bucket order="Descending" class="java.lang.String">
+						<bucketExpression><![CDATA[$F{gender}]]></bucketExpression>
+					</bucket>
+					<crosstabColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab 5_CH">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="20" uuid="171de53c-501e-4549-a7b3-ff713dc3055d"/>
+								<box padding="3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$V{gender}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabColumnHeader>
+					<crosstabTotalColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab 5_CT">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="40" uuid="d4517393-edeb-4c1e-a1d5-ae9bc62892f4"/>
+								<box padding="3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalColumnHeader>
+				</columnGroup>
+				<columnGroup name="ageGroup" height="20" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{ageGroup}]]></bucketExpression>
+					</bucket>
+					<crosstabColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab 5_CH">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="20" uuid="f0dbe35f-2309-4bca-85e5-feb7fd82001c"/>
+								<box padding="3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$V{ageGroup}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabColumnHeader>
+					<crosstabTotalColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab 5_CG">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="20" uuid="02c5a753-0b4e-4a3f-a911-814ce1c7c4c7"/>
+								<box padding="3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalColumnHeader>
+				</columnGroup>
+				<measure name="donorCounsellingStatus_MEASURE" class="java.lang.Integer" calculation="Count">
+					<measureExpression><![CDATA[$F{donorCounsellingStatus}]]></measureExpression>
+				</measure>
+				<crosstabCell width="40" height="20">
+					<cellContents mode="Opaque" style="Crosstab 5_CD">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="452dd7e3-8b07-4f81-9e2a-eddc83ed2b25"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" columnTotalGroup="gender">
+					<cellContents mode="Opaque" style="Crosstab 5_CT">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="c88d1d63-d652-403e-909d-1a1a84eb2677"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" columnTotalGroup="ageGroup">
+					<cellContents mode="Opaque" style="Crosstab 5_CG">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="37cde2e8-756b-4789-b5d4-53f1bf0c365d"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="ttiReactiveStatus">
+					<cellContents mode="Opaque" style="Crosstab 5_CT">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="b389f962-17b1-4f17-8b55-300d96b229b8"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="ttiReactiveStatus" columnTotalGroup="gender">
+					<cellContents mode="Opaque" style="Crosstab 5_CT">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="1559bd58-1d18-4b26-b035-54e54ca76d0f"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="ttiReactiveStatus" columnTotalGroup="ageGroup">
+					<cellContents mode="Opaque" style="Crosstab 5_CT">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="5918e47e-ac30-43f0-a543-18fde2d413b8"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="donorCounsellingStatus">
+					<cellContents mode="Opaque" style="Crosstab 5_CG">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="373afd11-db1c-432e-a7d6-90bdd4beb07a"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="donorCounsellingStatus" columnTotalGroup="gender">
+					<cellContents mode="Opaque" style="Crosstab 5_CT">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="b2c7136e-df42-40ab-9447-bcd363edf06c"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="donorCounsellingStatus" columnTotalGroup="ageGroup">
+					<cellContents mode="Opaque" style="Crosstab 5_CG">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="e841692f-5585-42cb-b606-5be57d411182"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+			</crosstab>
+		</band>
+		<band height="314">
+			<crosstab>
+				<reportElement x="0" y="0" width="802" height="314" uuid="aa922f49-018e-4132-9bea-53a26161eeba">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.crosstab.style.header" value="Crosstab 6_CH"/>
+					<property name="com.jaspersoft.studio.crosstab.style.group" value="Crosstab 6_CG"/>
+					<property name="com.jaspersoft.studio.crosstab.style.total" value="Crosstab 6_CT"/>
+					<property name="com.jaspersoft.studio.crosstab.style.detail" value="Crosstab 6_CD"/>
+				</reportElement>
+				<crosstabDataset>
+					<dataset>
+						<datasetRun subDataset="DonationDataSet" uuid="6c793bdc-f9f3-4a20-a306-8d3e795f5555">
+							<datasetParameter name="Start_Date">
+								<datasetParameterExpression><![CDATA[$P{Start_Date}]]></datasetParameterExpression>
+							</datasetParameter>
+							<datasetParameter name="End_Date">
+								<datasetParameterExpression><![CDATA[$P{End_Date}]]></datasetParameterExpression>
+							</datasetParameter>
+							<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+						</datasetRun>
+					</dataset>
+				</crosstabDataset>
+				<rowGroup name="venue" width="100" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{venue}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 6_CH">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="60" uuid="b593ee99-a162-47c0-a201-024aa90957f5"/>
+								<box padding="3"/>
+								<textFieldExpression><![CDATA[$V{venue}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 6_CT">
+							<staticText>
+								<reportElement x="0" y="0" width="340" height="20" uuid="83b48c87-deb5-4ba3-bc83-4da5988526ff"/>
+								<box padding="3"/>
+								<text><![CDATA[Total (All Venues)]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<rowGroup name="ttiReactiveStatus" width="130" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{ttiReactiveStatus}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 6_CH">
+							<textField>
+								<reportElement x="0" y="0" width="130" height="40" uuid="4fc21952-a638-4141-95a6-456b1fc303e9"/>
+								<box padding="3"/>
+								<textFieldExpression><![CDATA[$V{ttiReactiveStatus}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 6_CG">
+							<staticText>
+								<reportElement x="0" y="0" width="240" height="20" uuid="2e709d50-6414-49fb-96d1-eb8d5b4d87a3"/>
+								<box padding="3"/>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<rowGroup name="donorCounsellingStatus" width="110" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{donorCounsellingStatus}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 6_CH">
+							<textField>
+								<reportElement x="0" y="0" width="110" height="20" uuid="83d8c9c7-7ca3-4548-8b2f-7396797bc328"/>
+								<box padding="3"/>
+								<textFieldExpression><![CDATA[$V{donorCounsellingStatus}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 6_CG">
+							<staticText>
+								<reportElement x="0" y="0" width="110" height="20" uuid="ac6c7094-650b-4c56-90e2-7d2012fb55d2"/>
+								<box padding="3"/>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<columnGroup name="gender" height="20" totalPosition="End">
+					<bucket order="Descending" class="java.lang.String">
+						<bucketExpression><![CDATA[$F{gender}]]></bucketExpression>
+					</bucket>
+					<crosstabColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab 6_CH">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="20" uuid="9a537359-5395-49e5-b955-00c5078b9365"/>
+								<box padding="3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$V{gender}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabColumnHeader>
+					<crosstabTotalColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab 6_CT">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="40" uuid="2b51b24a-3c0a-4630-b25a-50376b496250"/>
+								<box padding="3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalColumnHeader>
+				</columnGroup>
+				<columnGroup name="ageGroup" height="20" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{ageGroup}]]></bucketExpression>
+					</bucket>
+					<crosstabColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab 6_CH">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="20" uuid="1aba5447-7ecb-46f4-91e7-bf11b927a63c"/>
+								<box padding="3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$V{ageGroup}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabColumnHeader>
+					<crosstabTotalColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab 6_CG">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="20" uuid="d89e24ab-610d-4eca-b582-0b3058d2e064"/>
+								<box padding="3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalColumnHeader>
+				</columnGroup>
+				<measure name="donorCounsellingStatus_MEASURE" class="java.lang.Integer" calculation="Count">
+					<measureExpression><![CDATA[$F{donorCounsellingStatus}]]></measureExpression>
+				</measure>
+				<crosstabCell width="40" height="20">
+					<cellContents mode="Opaque" style="Crosstab 6_CD">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="ae3a3faf-af17-4693-b86a-61a4b684badf"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" columnTotalGroup="gender">
+					<cellContents mode="Opaque" style="Crosstab 6_CT">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="acfccbb0-4321-4d92-9d76-c764360a1557"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" columnTotalGroup="ageGroup">
+					<cellContents mode="Opaque" style="Crosstab 6_CG">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="36c0eaf1-a263-442f-bda0-6b7de3e89fab"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="venue">
+					<cellContents mode="Opaque" style="Crosstab 6_CT">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="cb737a0a-5a68-4f5d-9834-41bc48612212"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="venue" columnTotalGroup="gender">
+					<cellContents mode="Opaque" style="Crosstab 6_CT">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="281ebad0-bf20-449d-9885-4e36cf12c949"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="venue" columnTotalGroup="ageGroup">
+					<cellContents mode="Opaque" style="Crosstab 6_CT">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="b95fb6da-72d1-431b-8eb0-9efb05192ab4"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="ttiReactiveStatus">
+					<cellContents mode="Opaque" style="Crosstab 6_CG">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="4e274848-2f77-4547-aaa7-2975443464fa"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="ttiReactiveStatus" columnTotalGroup="gender">
+					<cellContents mode="Opaque" style="Crosstab 6_CT">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="7341f1a9-b327-44f3-b7ba-bd958ec47f2f"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="ttiReactiveStatus" columnTotalGroup="ageGroup">
+					<cellContents mode="Opaque" style="Crosstab 6_CG">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="3245d923-1efe-4608-84b2-4852ef30fb14"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="donorCounsellingStatus">
+					<cellContents mode="Opaque" style="Crosstab 6_CG">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="f29932ce-3b71-4199-bcd2-9e5e0e81a6d8"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="donorCounsellingStatus" columnTotalGroup="gender">
+					<cellContents mode="Opaque" style="Crosstab 6_CT">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="1cb72751-3e78-40be-9b3a-f0c653832c86"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="40" height="20" rowTotalGroup="donorCounsellingStatus" columnTotalGroup="ageGroup">
+					<cellContents mode="Opaque" style="Crosstab 6_CG">
+						<textField>
+							<reportElement x="0" y="0" width="40" height="20" uuid="4a4079e9-8630-44ea-b0c8-2a541153c3a0"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{donorCounsellingStatus_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+			</crosstab>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="50" splitType="Stretch">
+			<textField pattern="HH:mm">
+				<reportElement x="83" y="18" width="100" height="21" uuid="d799e557-67eb-498f-bc42-5790a6584cbd"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="7" y="18" width="80" height="21" uuid="9d38a497-9c03-4535-a08e-3598b456d056"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="657" y="16" width="81" height="22" uuid="b47d4450-e31a-4387-8972-8f5d20dfba31"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="739" y="16" width="61" height="22" uuid="09a83949-a792-411e-9921-7e99d1981eb4"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="337" y="18" width="87" height="30" uuid="12887643-eb42-409e-9a00-3b69d3a16e60"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Powered By BSIS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="34" width="127" height="15" uuid="873b4591-a3f0-4211-83e0-5edbcfdd363a"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[http://www.jembi.org]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="405" y="35" width="127" height="15" uuid="dc24da80-9a7b-4f5e-a514-1c960e561183"/>
+				<textElement textAlignment="Center" markup="none">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[http://bsis.jembi.org]]></text>
+			</staticText>
+			<image>
+				<reportElement x="257" y="3" width="70" height="30" uuid="0e189bae-61f1-4354-87fd-2730ecd9dce7"/>
+				<imageExpression><![CDATA["jhs_logo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="435" y="1" width="70" height="35" uuid="39303882-5083-42b2-9123-8fe04659244c"/>
+				<imageExpression><![CDATA["bsis_logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</jasperReport>
