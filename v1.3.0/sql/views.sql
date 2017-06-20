@@ -43,6 +43,7 @@ WHERE Donation.isDeleted = 0
 AND Donor.isDeleted = 0
 AND Donor.donorStatus != 'MERGED'
 AND PackType.countAsDonation = 1
+AND BloodTestResult.isDeleted = 0
 GROUP BY donationIdentificationNumber
 ORDER BY donationDate;
 
@@ -269,5 +270,6 @@ WHERE Donation.isDeleted = 0
 AND Donor.isDeleted = 0
 AND Donor.donorStatus != 'MERGED'
 AND PackType.countAsDonation = 1
+AND BloodTestResult.isDeleted = 0
 GROUP BY donationIdentificationNumber
 ORDER BY donationDate;
