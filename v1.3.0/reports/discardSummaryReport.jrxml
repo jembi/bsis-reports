@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-18T21:12:56 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bsisTemplate" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8531bd75-d4a6-400e-985c-2ca1cb3d518e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="bsis"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CG" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CT" mode="Opaque" backcolor="#005FB3">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 1_CH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 1_CG" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 1_CT" mode="Opaque" backcolor="#005FB3">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 1_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 2_CH" mode="Opaque" backcolor="#8FAFCC">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 2_CG" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 2_CT" mode="Opaque" backcolor="#596E80">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 2_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 3_CG" mode="Opaque" backcolor="#E6F3FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 3_CT" mode="Opaque" backcolor="#6093BF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 3_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 4_CG" mode="Opaque" backcolor="#E6F3FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 4_CT" mode="Opaque" backcolor="#6093BF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab 4_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="DiscardDataSet" uuid="3f74547c-bedc-4ce8-975e-55fadcb3b32c">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="bsis"/>
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<parameter name="Start_Date" class="java.sql.Date"/>
+		<parameter name="End_Date" class="java.sql.Date"/>
+		<queryString>
+			<![CDATA[SELECT 
+*
+FROM `discardSummaryView`
+WHERE statusChangedOn BETWEEN $P{Start_Date} AND DATE_ADD($P{End_Date}, INTERVAL 1 DAY)]]>
+		</queryString>
+		<field name="statusChangedOn" class="java.sql.Timestamp"/>
+		<field name="statusChangeReason" class="java.lang.String"/>
+		<field name="componentTypeName" class="java.lang.String"/>
+		<field name="processedAtLocation" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="Start_Date" class="java.sql.Date">
+		<parameterDescription><![CDATA[Start Date]]></parameterDescription>
+	</parameter>
+	<parameter name="End_Date" class="java.sql.Date">
+		<parameterDescription><![CDATA[End Date]]></parameterDescription>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT 1;]]>
+	</queryString>
+	<field name="1" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="67" splitType="Stretch">
+			<image>
+				<reportElement x="104" y="1" width="110" height="56" uuid="b8f5d8af-3e06-4291-a55b-2b5ecf4206eb"/>
+				<imageExpression><![CDATA["header_logo_left.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="547" y="1" width="110" height="56" uuid="4f328ce4-cfaf-4424-8c64-23bbf13c00a1"/>
+				<imageExpression><![CDATA["header_logo_right.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="214" y="37" width="333" height="30" uuid="764ac738-733f-4385-b71b-64c37bad85b1"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA["Date Period:  " + $P{Start_Date} + "  to  " + $P{End_Date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="0" width="342" height="30" uuid="9fa9dbcd-6716-4408-92c2-2be2c14647f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Discard Summary Report]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="202" splitType="Stretch">
+			<crosstab>
+				<reportElement x="0" y="0" width="802" height="202" uuid="4a7a62cd-8c58-437d-9ce8-e94ee5cd7c0b">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.crosstab.style.header" value="Crosstab 3_CH"/>
+					<property name="com.jaspersoft.studio.crosstab.style.group" value="Crosstab 3_CG"/>
+					<property name="com.jaspersoft.studio.crosstab.style.total" value="Crosstab 3_CT"/>
+					<property name="com.jaspersoft.studio.crosstab.style.detail" value="Crosstab 3_CD"/>
+				</reportElement>
+				<crosstabDataset>
+					<dataset>
+						<datasetRun subDataset="DiscardDataSet" uuid="0d50441d-8466-4e18-a0b1-e11170cb3218">
+							<datasetParameter name="Start_Date">
+								<datasetParameterExpression><![CDATA[$P{Start_Date}]]></datasetParameterExpression>
+							</datasetParameter>
+							<datasetParameter name="End_Date">
+								<datasetParameterExpression><![CDATA[$P{End_Date}]]></datasetParameterExpression>
+							</datasetParameter>
+							<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+						</datasetRun>
+					</dataset>
+				</crosstabDataset>
+				<rowGroup name="componentTypeName" width="240" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{componentTypeName}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 3_CH">
+							<textField>
+								<reportElement x="0" y="0" width="240" height="20" uuid="abf9a2fb-f559-472f-b49c-ddac44996d2a"/>
+								<box padding="3"/>
+								<textFieldExpression><![CDATA[$V{componentTypeName}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 3_CT">
+							<staticText>
+								<reportElement x="0" y="0" width="240" height="20" uuid="3791e2bf-8f6d-43b7-acea-363ecfde713f"/>
+								<box padding="3"/>
+								<text><![CDATA[Total (All Sites)]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<columnGroup name="statusChangeReason" height="150" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{statusChangeReason}]]></bucketExpression>
+					</bucket>
+					<crosstabColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab 3_CH">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="150" uuid="c2634f29-df26-46c7-9dd0-fa68ed759994"/>
+								<box padding="3"/>
+								<textElement rotation="Right"/>
+								<textFieldExpression><![CDATA[$V{statusChangeReason}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabColumnHeader>
+					<crosstabTotalColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab 3_CT">
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="150" uuid="f50bf2f5-5d8c-4c67-b7f8-cb51a6f093d3"/>
+								<box padding="3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalColumnHeader>
+				</columnGroup>
+				<measure name="componentTypeName_MEASURE" class="java.lang.Integer" calculation="Count">
+					<measureExpression><![CDATA[$F{componentTypeName}]]></measureExpression>
+				</measure>
+				<crosstabCell width="50" height="20">
+					<cellContents mode="Opaque" style="Crosstab 3_CD">
+						<textField>
+							<reportElement x="0" y="0" width="50" height="20" uuid="53a42188-b994-4341-b421-3d9376219b3f"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{componentTypeName_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="50" height="20" columnTotalGroup="statusChangeReason">
+					<cellContents mode="Opaque" style="Crosstab 3_CT">
+						<textField>
+							<reportElement x="0" y="0" width="50" height="20" uuid="5f63b51b-e4d4-4ed5-91c3-62b2de320dd1"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{componentTypeName_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="50" height="20" rowTotalGroup="componentTypeName">
+					<cellContents mode="Opaque" style="Crosstab 3_CT">
+						<textField>
+							<reportElement x="0" y="0" width="50" height="20" uuid="9124b26e-6900-4095-9609-3792b350d5c2"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{componentTypeName_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="50" height="20" rowTotalGroup="componentTypeName" columnTotalGroup="statusChangeReason">
+					<cellContents mode="Opaque" style="Crosstab 3_CT">
+						<textField>
+							<reportElement x="0" y="0" width="50" height="20" uuid="ebecfad3-2864-4c2a-ac9c-f125d6825113"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{componentTypeName_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+			</crosstab>
+		</band>
+		<band height="290">
+			<crosstab>
+				<reportElement x="0" y="0" width="802" height="290" uuid="f9cb4fee-1e38-4fc6-85ae-1335b0ae8a42">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.crosstab.style.header" value="Crosstab 4_CH"/>
+					<property name="com.jaspersoft.studio.crosstab.style.group" value="Crosstab 4_CG"/>
+					<property name="com.jaspersoft.studio.crosstab.style.total" value="Crosstab 4_CT"/>
+					<property name="com.jaspersoft.studio.crosstab.style.detail" value="Crosstab 4_CD"/>
+				</reportElement>
+				<crosstabDataset>
+					<dataset>
+						<datasetRun subDataset="DiscardDataSet" uuid="64520f48-c844-4121-8dd4-c58d756c57d7">
+							<datasetParameter name="Start_Date">
+								<datasetParameterExpression><![CDATA[$P{Start_Date}]]></datasetParameterExpression>
+							</datasetParameter>
+							<datasetParameter name="End_Date">
+								<datasetParameterExpression><![CDATA[$P{End_Date}]]></datasetParameterExpression>
+							</datasetParameter>
+							<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+						</datasetRun>
+					</dataset>
+				</crosstabDataset>
+				<rowGroup name="processedAtLocation" width="120" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{processedAtLocation}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 4_CH">
+							<textField>
+								<reportElement x="0" y="0" width="120" height="40" uuid="3c8e15fb-1ed9-4602-ad65-0d9e413ca333"/>
+								<box padding="3"/>
+								<textFieldExpression><![CDATA[($V{processedAtLocation} != null ? $V{processedAtLocation}: "Unknown")]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 4_CT">
+							<staticText>
+								<reportElement x="0" y="0" width="350" height="20" uuid="51e72d86-4e07-452f-959d-e0557967f5d8"/>
+								<box padding="3"/>
+								<text><![CDATA[Total (All Sites)]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<rowGroup name="componentTypeName" width="230" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{componentTypeName}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 4_CH">
+							<textField>
+								<reportElement x="0" y="0" width="230" height="20" uuid="15abe96f-59c7-4ef5-a189-16afb7330e5d"/>
+								<box padding="3"/>
+								<textFieldExpression><![CDATA[$V{componentTypeName}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque" style="Crosstab 4_CG">
+							<staticText>
+								<reportElement x="0" y="0" width="230" height="20" uuid="5082f68e-f90c-44fb-bf25-d0feccb2131a"/>
+								<box padding="3"/>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<columnGroup name="statusChangeReason" height="150" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{statusChangeReason}]]></bucketExpression>
+					</bucket>
+					<crosstabColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab 4_CH">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="150" uuid="2a23d88c-5689-4a83-a949-7748fd3aea4c"/>
+								<box padding="3"/>
+								<textElement rotation="Right"/>
+								<textFieldExpression><![CDATA[$V{statusChangeReason}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabColumnHeader>
+					<crosstabTotalColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab 4_CT">
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="150" uuid="b5265997-1ff1-40b1-90a0-fc308a5f962e"/>
+								<box padding="3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalColumnHeader>
+				</columnGroup>
+				<measure name="componentTypeName_MEASURE" class="java.lang.Integer" calculation="Count">
+					<measureExpression><![CDATA[$F{componentTypeName}]]></measureExpression>
+				</measure>
+				<crosstabCell width="50" height="20">
+					<cellContents mode="Opaque" style="Crosstab 4_CD">
+						<textField>
+							<reportElement x="0" y="0" width="50" height="20" uuid="043156e5-711b-407e-ae80-301b6fb37f28"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{componentTypeName_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="50" height="20" columnTotalGroup="statusChangeReason">
+					<cellContents mode="Opaque" style="Crosstab 4_CT">
+						<textField>
+							<reportElement x="0" y="0" width="50" height="20" uuid="8ffb2b29-fc54-487b-bd11-53ea83a00c7b"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{componentTypeName_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="50" height="20" rowTotalGroup="processedAtLocation">
+					<cellContents mode="Opaque" style="Crosstab 4_CT">
+						<textField>
+							<reportElement x="0" y="0" width="50" height="20" uuid="0e54bc96-e4cd-49b0-b92d-260247ad2bec"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{componentTypeName_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="50" height="20" rowTotalGroup="processedAtLocation" columnTotalGroup="statusChangeReason">
+					<cellContents mode="Opaque" style="Crosstab 4_CT">
+						<textField>
+							<reportElement x="0" y="0" width="50" height="20" uuid="f3dbfdc2-1de3-4641-aece-8c38f87469f5"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{componentTypeName_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="50" height="20" rowTotalGroup="componentTypeName">
+					<cellContents mode="Opaque" style="Crosstab 4_CG">
+						<textField>
+							<reportElement x="0" y="0" width="50" height="20" uuid="1f1cb5f7-a74f-431b-9af0-6f3fca19138f"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{componentTypeName_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="50" height="20" rowTotalGroup="componentTypeName" columnTotalGroup="statusChangeReason">
+					<cellContents mode="Opaque" style="Crosstab 4_CT">
+						<textField>
+							<reportElement x="0" y="0" width="50" height="20" uuid="83f4c28a-9a55-4dc4-8a21-03853e23b835"/>
+							<box padding="3"/>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<textFieldExpression><![CDATA[$V{componentTypeName_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+			</crosstab>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="50" splitType="Stretch">
+			<textField pattern="HH:mm">
+				<reportElement x="83" y="18" width="100" height="21" uuid="d799e557-67eb-498f-bc42-5790a6584cbd"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="7" y="18" width="80" height="21" uuid="9d38a497-9c03-4535-a08e-3598b456d056"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="657" y="16" width="81" height="22" uuid="b47d4450-e31a-4387-8972-8f5d20dfba31"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="739" y="16" width="61" height="22" uuid="09a83949-a792-411e-9921-7e99d1981eb4"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="337" y="18" width="87" height="30" uuid="12887643-eb42-409e-9a00-3b69d3a16e60"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Powered By BSIS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="34" width="127" height="15" uuid="873b4591-a3f0-4211-83e0-5edbcfdd363a"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[http://www.jembi.org]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="405" y="35" width="127" height="15" uuid="dc24da80-9a7b-4f5e-a514-1c960e561183"/>
+				<textElement textAlignment="Center" markup="none">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[http://bsis.jembi.org]]></text>
+			</staticText>
+			<image>
+				<reportElement x="257" y="3" width="70" height="30" uuid="0e189bae-61f1-4354-87fd-2730ecd9dce7"/>
+				<imageExpression><![CDATA["jhs_logo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="435" y="1" width="70" height="35" uuid="39303882-5083-42b2-9123-8fe04659244c"/>
+				<imageExpression><![CDATA["bsis_logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</jasperReport>
