@@ -36,14 +36,13 @@ LEFT JOIN Location ON Donation.venue_id = Location.id
 LEFT JOIN DonationType ON Donation.donationType_id = DonationType.id
 LEFT JOIN PackType ON Donation.packType_id = PackType.id
 LEFT JOIN PostDonationCounselling ON Donation.id = PostDonationCounselling.donation_id
-LEFT JOIN BloodTestResult testHIVRepeat1 ON testHIVRepeat1.donation_id = Donation.id AND testHIVRepeat1.bloodTest_id = 18
-LEFT JOIN BloodTestResult testHIVRepeat2 ON testHIVRepeat2.donation_id = Donation.id AND testHIVRepeat2.bloodTest_id = 19
+LEFT JOIN BloodTestResult testHIVRepeat1 ON testHIVRepeat1.donation_id = Donation.id AND testHIVRepeat1.bloodTest_id = 18 AND testHIVRepeat1.isDeleted = 0
+LEFT JOIN BloodTestResult testHIVRepeat2 ON testHIVRepeat2.donation_id = Donation.id AND testHIVRepeat2.bloodTest_id = 19 AND testHIVRepeat2.isDeleted = 0
 
 WHERE Donation.isDeleted = 0
 AND Donor.isDeleted = 0
 AND Donor.donorStatus != 'MERGED'
 AND PackType.countAsDonation = 1
-AND BloodTestResult.isDeleted = 0
 GROUP BY donationIdentificationNumber
 ORDER BY donationDate;
 
@@ -243,37 +242,36 @@ LEFT JOIN Location ON Donation.venue_id = Location.id
 LEFT JOIN DonationType ON Donation.donationType_id = DonationType.id
 LEFT JOIN PackType ON Donation.packType_id = PackType.id
 
-LEFT JOIN BloodTestResult testABO ON testABO.donation_id = Donation.id AND testABO.bloodTest_id = 1
-LEFT JOIN BloodTestResult testRh ON testRh.donation_id = Donation.id AND testRh.bloodTest_id = 2
-LEFT JOIN BloodTestResult testABORepeat ON testABORepeat.donation_id = Donation.id AND testABORepeat.bloodTest_id = 34
-LEFT JOIN BloodTestResult testRhRepeat ON testRhRepeat.donation_id = Donation.id AND testRhRepeat.bloodTest_id = 35
-LEFT JOIN BloodTestResult testTitre ON testTitre.donation_id = Donation.id AND testTitre.bloodTest_id = 3
-LEFT JOIN BloodTestResult testAbScr ON testAbScr.donation_id = Donation.id AND testAbScr.bloodTest_id = 33
+LEFT JOIN BloodTestResult testABO ON testABO.donation_id = Donation.id AND testABO.bloodTest_id = 1 AND testABO.isDeleted = 0
+LEFT JOIN BloodTestResult testRh ON testRh.donation_id = Donation.id AND testRh.bloodTest_id = 2 AND testRh.isDeleted = 0
+LEFT JOIN BloodTestResult testABORepeat ON testABORepeat.donation_id = Donation.id AND testABORepeat.bloodTest_id = 34 AND testABORepeat.isDeleted = 0
+LEFT JOIN BloodTestResult testRhRepeat ON testRhRepeat.donation_id = Donation.id AND testRhRepeat.bloodTest_id = 35 AND testRhRepeat.isDeleted = 0
+LEFT JOIN BloodTestResult testTitre ON testTitre.donation_id = Donation.id AND testTitre.bloodTest_id = 3 AND testTitre.isDeleted = 0
+LEFT JOIN BloodTestResult testAbScr ON testAbScr.donation_id = Donation.id AND testAbScr.bloodTest_id = 33 AND testAbScr.isDeleted = 0
 
-LEFT JOIN BloodTestResult testHIV ON testHIV.donation_id = Donation.id AND testHIV.bloodTest_id = 17
-LEFT JOIN BloodTestResult testHIVRepeat1 ON testHIVRepeat1.donation_id = Donation.id AND testHIVRepeat1.bloodTest_id = 18
-LEFT JOIN BloodTestResult testHIVRepeat2 ON testHIVRepeat2.donation_id = Donation.id AND testHIVRepeat2.bloodTest_id = 19
-LEFT JOIN BloodTestResult testHIVConf ON testHIVConf.donation_id = Donation.id AND testHIVConf.bloodTest_id = 29
+LEFT JOIN BloodTestResult testHIV ON testHIV.donation_id = Donation.id AND testHIV.bloodTest_id = 17 AND testHIV.isDeleted = 0
+LEFT JOIN BloodTestResult testHIVRepeat1 ON testHIVRepeat1.donation_id = Donation.id AND testHIVRepeat1.bloodTest_id = 18 AND testHIVRepeat1.isDeleted = 0
+LEFT JOIN BloodTestResult testHIVRepeat2 ON testHIVRepeat2.donation_id = Donation.id AND testHIVRepeat2.bloodTest_id = 19 AND testHIVRepeat2.isDeleted = 0
+LEFT JOIN BloodTestResult testHIVConf ON testHIVConf.donation_id = Donation.id AND testHIVConf.bloodTest_id = 29 AND testHIVConf.isDeleted = 0
 
-LEFT JOIN BloodTestResult testHBV ON testHBV.donation_id = Donation.id AND testHBV.bloodTest_id = 20
-LEFT JOIN BloodTestResult testHBVRepeat1 ON testHBVRepeat1.donation_id = Donation.id AND testHBVRepeat1.bloodTest_id = 21
-LEFT JOIN BloodTestResult testHBVRepeat2 ON testHBVRepeat2.donation_id = Donation.id AND testHBVRepeat2.bloodTest_id = 22
-LEFT JOIN BloodTestResult testHBVConf ON testHBVConf.donation_id = Donation.id AND testHBVConf.bloodTest_id = 30
+LEFT JOIN BloodTestResult testHBV ON testHBV.donation_id = Donation.id AND testHBV.bloodTest_id = 20 AND testHBV.isDeleted = 0
+LEFT JOIN BloodTestResult testHBVRepeat1 ON testHBVRepeat1.donation_id = Donation.id AND testHBVRepeat1.bloodTest_id = 21 AND testHBVRepeat1.isDeleted = 0
+LEFT JOIN BloodTestResult testHBVRepeat2 ON testHBVRepeat2.donation_id = Donation.id AND testHBVRepeat2.bloodTest_id = 22 AND testHBVRepeat2.isDeleted = 0
+LEFT JOIN BloodTestResult testHBVConf ON testHBVConf.donation_id = Donation.id AND testHBVConf.bloodTest_id = 30 AND testHBVConf.isDeleted = 0
 
-LEFT JOIN BloodTestResult testHCV ON testHCV.donation_id = Donation.id AND testHCV.bloodTest_id = 23
-LEFT JOIN BloodTestResult testHCVRepeat1 ON testHCVRepeat1.donation_id = Donation.id AND testHCVRepeat1.bloodTest_id = 24
-LEFT JOIN BloodTestResult testHCVRepeat2 ON testHCVRepeat2.donation_id = Donation.id AND testHCVRepeat2.bloodTest_id = 25
-LEFT JOIN BloodTestResult testHCVConf ON testHCVConf.donation_id = Donation.id AND testHCVConf.bloodTest_id = 31
+LEFT JOIN BloodTestResult testHCV ON testHCV.donation_id = Donation.id AND testHCV.bloodTest_id = 23 AND testHCV.isDeleted = 0
+LEFT JOIN BloodTestResult testHCVRepeat1 ON testHCVRepeat1.donation_id = Donation.id AND testHCVRepeat1.bloodTest_id = 24 AND testHCVRepeat1.isDeleted = 0
+LEFT JOIN BloodTestResult testHCVRepeat2 ON testHCVRepeat2.donation_id = Donation.id AND testHCVRepeat2.bloodTest_id = 25 AND testHCVRepeat2.isDeleted = 0
+LEFT JOIN BloodTestResult testHCVConf ON testHCVConf.donation_id = Donation.id AND testHCVConf.bloodTest_id = 31 AND testHCVConf.isDeleted = 0
 
-LEFT JOIN BloodTestResult testSyphilis ON testSyphilis.donation_id = Donation.id AND testSyphilis.bloodTest_id = 26
-LEFT JOIN BloodTestResult testSyphilisRepeat1 ON testSyphilisRepeat1.donation_id = Donation.id AND testSyphilisRepeat1.bloodTest_id = 27
-LEFT JOIN BloodTestResult testSyphilisRepeat2 ON testSyphilisRepeat2.donation_id = Donation.id AND testSyphilisRepeat2.bloodTest_id = 28
-LEFT JOIN BloodTestResult testSyphilisConf ON testSyphilisConf.donation_id = Donation.id AND testSyphilisConf.bloodTest_id = 32
+LEFT JOIN BloodTestResult testSyphilis ON testSyphilis.donation_id = Donation.id AND testSyphilis.bloodTest_id = 26 AND testSyphilis.isDeleted = 0
+LEFT JOIN BloodTestResult testSyphilisRepeat1 ON testSyphilisRepeat1.donation_id = Donation.id AND testSyphilisRepeat1.bloodTest_id = 27 AND testSyphilisRepeat1.isDeleted = 0
+LEFT JOIN BloodTestResult testSyphilisRepeat2 ON testSyphilisRepeat2.donation_id = Donation.id AND testSyphilisRepeat2.bloodTest_id = 28 AND testSyphilisRepeat2.isDeleted = 0
+LEFT JOIN BloodTestResult testSyphilisConf ON testSyphilisConf.donation_id = Donation.id AND testSyphilisConf.bloodTest_id = 32 AND testSyphilisConf.isDeleted = 0
 
 WHERE Donation.isDeleted = 0
 AND Donor.isDeleted = 0
 AND Donor.donorStatus != 'MERGED'
 AND PackType.countAsDonation = 1
-AND BloodTestResult.isDeleted = 0
 GROUP BY donationIdentificationNumber
 ORDER BY donationDate;
