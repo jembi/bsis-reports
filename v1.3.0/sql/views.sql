@@ -112,7 +112,8 @@ LEFT JOIN ComponentStatusChangeReason ON ComponentStatusChange.statusChangeReaso
 LEFT JOIN ComponentBatch ON Component.componentBatch_id = ComponentBatch.id
 LEFT JOIN componentBatchLocationView ON Component.componentBatch_id = componentBatchLocationView.id
 WHERE newStatus = 'DISCARDED'
-AND Component.isDeleted = '0' AND ComponentStatusChange.isDeleted = '0';
+AND Component.isDeleted = '0'
+AND ComponentStatusChange.isDeleted = '0';
 
 # ADD VIEW TO GENERATE ISSUED SUMMARY
 # ---------------------------------------------
@@ -133,7 +134,10 @@ LEFT JOIN OrderForm ON OrderForm_Component.orderForm_id = OrderForm.id
 LEFT JOIN Component ON OrderForm_Component.component_id = Component.id
 LEFT JOIN ComponentType ON Component.componentType_id = ComponentType.id
 LEFT JOIN Location DispatchedTo ON OrderForm.dispatchedTo_id = DispatchedTo.id
-WHERE OrderForm.isDeleted = '0' AND type = "ISSUE" AND OrderForm.status = "DISPATCHED"
+WHERE OrderForm.isDeleted = '0'
+AND type = "ISSUE"
+AND OrderForm.status = "DISPATCHED"
+AND Component.isDeleted = 0
 ORDER BY orderId;
 
 
