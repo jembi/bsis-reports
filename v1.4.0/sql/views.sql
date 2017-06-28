@@ -23,10 +23,10 @@ ELSE 'Not Counselled'
 END AS donorCounsellingStatus,
 
 CASE
-WHEN ttiStatus = 'TTI_UNSAFE' AND released = '1'
+WHEN ttiStatus = 'UNSAFE' AND released = '1'
 	AND (testHIVRepeat1.result = 'POS' OR testHIVRepeat2.result = 'POS') THEN 'Reactive for HIV'
-WHEN ttiStatus = 'TTI_UNSAFE' AND released = '1' THEN 'Reactive for Other TTIs'
-WHEN ttiStatus = 'TTI_SAFE' AND released = '1' THEN 'TTI Unreactive'
+WHEN ttiStatus = 'UNSAFE' AND released = '1' THEN 'Reactive for Other TTIs'
+WHEN ttiStatus = 'SAFE' AND released = '1' THEN 'TTI Unreactive'
 ELSE 'Unknown'
 END AS ttiReactiveStatus
 
@@ -172,28 +172,28 @@ END AS bloodGrouping,
 
 CASE
 WHEN (testHIVRepeat1.result = 'POS' OR testHIVRepeat2.result = 'POS')
-	AND ttiStatus = 'TTI_UNSAFE' AND released = '1' THEN 'Reactive for HIV'
+	AND ttiStatus = 'UNSAFE' AND released = '1' THEN 'Reactive for HIV'
 WHEN released = '1' THEN 'Not Reactive for HIV'
 ELSE 'Unknown'
 END AS hivPrevalence,
 
 CASE
 WHEN (testHBVRepeat1.result = 'POS' OR testHBVRepeat2.result = 'POS')
-	AND ttiStatus = 'TTI_UNSAFE' AND released = '1' THEN 'Reactive for HBV'
+	AND ttiStatus = 'UNSAFE' AND released = '1' THEN 'Reactive for HBV'
 WHEN released = '1' THEN 'Not Reactive for HBV'
 ELSE 'Unknown'
 END AS hbvPrevalence,
 
 CASE
 WHEN (testHCVRepeat1.result = 'POS' OR testHCVRepeat2.result = 'POS')
-	AND ttiStatus = 'TTI_UNSAFE' AND released = '1' THEN 'Reactive for HCV'
+	AND ttiStatus = 'UNSAFE' AND released = '1' THEN 'Reactive for HCV'
 WHEN released = '1' THEN 'Not Reactive for HCV'
 ELSE 'Unknown'
 END AS hcvPrevalence,
 
 CASE
 WHEN (testSyphilisRepeat1.result = 'POS' OR testSyphilisRepeat2.result = 'POS')
-	AND ttiStatus = 'TTI_UNSAFE' AND released = '1' THEN 'Reactive for Syphilis'
+	AND ttiStatus = 'UNSAFE' AND released = '1' THEN 'Reactive for Syphilis'
 WHEN released = '1' THEN 'Not Reactive for Syphilis'
 ELSE 'Unknown'
 END AS syphilisPrevalence,
@@ -204,34 +204,34 @@ WHEN (testHIVRepeat1.result = 'POS' OR testHIVRepeat2.result = 'POS')
 	AND (testHBVRepeat1.result = 'POS' OR testHBVRepeat2.result = 'POS')
 	AND (testHCVRepeat1.result = 'POS' OR testHCVRepeat2.result = 'POS')
   AND (testSyphilisRepeat1.result = 'POS' OR testSyphilisRepeat2.result = 'POS')
-	AND ttiStatus = 'TTI_UNSAFE' AND released = '1' THEN 'HIV, HBV, HCV, Syphilis'
+	AND ttiStatus = 'UNSAFE' AND released = '1' THEN 'HIV, HBV, HCV, Syphilis'
 WHEN (testHIVRepeat1.result = 'POS' OR testHIVRepeat2.result = 'POS')
 	AND (testHBVRepeat1.result = 'POS' OR testHBVRepeat2.result = 'POS')
   AND (testHCVRepeat1.result = 'POS' OR testHCVRepeat2.result = 'POS')
-	AND ttiStatus = 'TTI_UNSAFE' AND released = '1' THEN 'HIV, HBV, HCV'
+	AND ttiStatus = 'UNSAFE' AND released = '1' THEN 'HIV, HBV, HCV'
 WHEN (testHIVRepeat1.result = 'POS' OR testHIVRepeat2.result = 'POS')
 	AND (testHBVRepeat1.result = 'POS' OR testHBVRepeat2.result = 'POS')
   AND (testSyphilisRepeat1.result = 'POS' OR testSyphilisRepeat2.result = 'POS')
-	AND ttiStatus = 'TTI_UNSAFE' AND released = '1' THEN 'HIV, HBV, Syphilis'
+	AND ttiStatus = 'UNSAFE' AND released = '1' THEN 'HIV, HBV, Syphilis'
 WHEN (testHIVRepeat1.result = 'POS' OR testHIVRepeat2.result = 'POS')
 	AND (testHCVRepeat1.result = 'POS' OR testHCVRepeat2.result = 'POS')
   AND (testSyphilisRepeat1.result = 'POS' OR testSyphilisRepeat2.result = 'POS')
-	AND ttiStatus = 'TTI_UNSAFE' AND released = '1' THEN 'HIV, HCV, Syphilis'
+	AND ttiStatus = 'UNSAFE' AND released = '1' THEN 'HIV, HCV, Syphilis'
 WHEN (testHIVRepeat1.result = 'POS' OR testHIVRepeat2.result = 'POS')
 	AND (testHBVRepeat1.result = 'POS' OR testHBVRepeat2.result = 'POS')
-	AND ttiStatus = 'TTI_UNSAFE' AND released = '1' THEN 'HIV, HBV'
+	AND ttiStatus = 'UNSAFE' AND released = '1' THEN 'HIV, HBV'
 WHEN (testHIVRepeat1.result = 'POS' OR testHIVRepeat2.result = 'POS')
 	AND (testHCVRepeat1.result = 'POS' OR testHCVRepeat2.result = 'POS')
-	AND ttiStatus = 'TTI_UNSAFE' AND released = '1' THEN 'HIV, HCV'
+	AND ttiStatus = 'UNSAFE' AND released = '1' THEN 'HIV, HCV'
 WHEN (testHIVRepeat1.result = 'POS' OR testHIVRepeat2.result = 'POS')
 	AND (testSyphilisRepeat1.result = 'POS' OR testSyphilisRepeat2.result = 'POS')
-	AND ttiStatus = 'TTI_UNSAFE' AND released = '1' THEN 'HIV, Syphilis'
+	AND ttiStatus = 'UNSAFE' AND released = '1' THEN 'HIV, Syphilis'
 WHEN  (testHIVRepeat1.result = 'POS' OR testHIVRepeat2.result = 'POS')
-	AND ttiStatus = 'TTI_UNSAFE' AND released = '1' THEN 'HIV'
+	AND ttiStatus = 'UNSAFE' AND released = '1' THEN 'HIV'
 WHEN (testHBVRepeat1.result = 'POS' OR testHBVRepeat2.result = 'POS')
 	OR (testHCVRepeat1.result = 'POS' OR testHCVRepeat2.result = 'POS')
   OR (testSyphilisRepeat1.result = 'POS' OR testSyphilisRepeat2.result = 'POS')
-	AND ttiStatus = 'TTI_UNSAFE' AND released = '1' THEN 'Other TTIs (Excl. HIV)'
+	AND ttiStatus = 'UNSAFE' AND released = '1' THEN 'Other TTIs (Excl. HIV)'
 WHEN released = '1' THEN 'No TTIs'
 ELSE 'Unknown'
 END AS ttiCoinfection
