@@ -332,7 +332,7 @@
 			<![CDATA[SELECT 
 *
 FROM `donationSummaryView`
-WHERE donationDate BETWEEN $P{Start_Date} AND DATE_ADD($P{End_Date}, INTERVAL 1 DAY)]]>
+WHERE donationDate BETWEEN $P{Start_Date} AND $P{End_Date}]]>
 		</queryString>
 		<field name="donationIdentificationNumber" class="java.lang.String"/>
 		<field name="donorNumber" class="java.lang.String"/>
